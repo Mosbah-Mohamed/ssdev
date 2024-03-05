@@ -1,0 +1,85 @@
+/*====================== start owl-carousel component ======================================*/
+
+.owl-carousel {
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    transform: translateY(-20px);
+    button {
+      position: absolute;
+      // background: $mainColor !important;
+      width: 38px;
+      height: 95px;
+      outline: none;
+      transition: 0.3s;
+      &.owl-prev {
+        background: rgba($color: #fff, $alpha: 0.19);
+        left: -5px;
+        span {
+          color: #ffff;
+          font-size: 50px;
+        }
+      }
+      &.owl-next {
+        background: rgba($color: #fff, $alpha: 0.19);
+        right: -5px;
+
+        span {
+          color: #ffff;
+          font-size: 50px;
+        }
+      }
+      &:hover {
+        // background-color: $secColor !important;
+      }
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 19px;
+  height: 8px;
+  margin: 5px 3px;
+  transition: 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: $mainColor;
+  width: 28px;
+}
+
+.owl-theme .owl-dots {
+  margin-top: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .owl-carousel {
+    width: 100% !important;
+  }
+  // .owl-carousel .owl-nav {
+  //   position: unset;
+  //   top: 50%;
+  //   width: 100%;
+  //   height: auto;
+  //   margin-top: 10px;
+  //   transform: none;
+  //   display: flex;
+  //   justify-content: center;
+  //   button {
+  //     position: unset;
+  //   }
+  // }
+}
+
+@media (max-width: 575.98px) {
+  // .owl-carousel .owl-nav button {
+  //   width: 35px;
+  //   height: 35px;
+  // }
+}
+
+/*====================== end owl-carousel component ======================================*/

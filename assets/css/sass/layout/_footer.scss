@@ -1,0 +1,135 @@
+// =============== start footer ========
+.footer {
+  background: url(../imgs/Images/footer.png);
+  background-position: 10px -11px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 80px 0 50px;
+  background-size: 600px;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    background: rgba(25, 24, 24, 1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  h6 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  .map {
+    height: 230px;
+  }
+
+  .footer_info {
+    .image {
+      img {
+      }
+    }
+
+    p {
+      width: 80%;
+      padding: 30px 0 40px;
+      color: #fff;
+    }
+
+    ul {
+      li {
+        margin-bottom: 16px;
+
+        &.multi_link {
+          display: flex;
+          gap: 16px;
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    .social_media {
+      ul {
+        display: flex;
+        gap: 21px;
+        li {
+          a {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #fff;
+            // border-top-left-radius: 13px;
+            transition: 0.5s;
+
+            @include border-notch(7px, 0, 0, 0);
+            position: relative;
+
+            &:after {
+              content: "";
+              position: absolute;
+              width: 50px;
+              height: 89px;
+              top: -51px;
+              left: -48px;
+              transform: rotate(48deg);
+              background: #fff;
+            }
+
+            &:hover {
+              background: #fff;
+              color: $defaultColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .site_info {
+    .all_lists {
+      display: flex;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li {
+          a {
+            color: #fff;
+            transition: 0.5s;
+
+            &:hover {
+              color: $defaultColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.copy_right {
+  padding: 17px 0;
+
+  p {
+    padding-bottom: 0;
+  }
+
+  span.word {
+    color: $defaultColor;
+  }
+}

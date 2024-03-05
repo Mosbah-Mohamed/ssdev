@@ -1,0 +1,93 @@
+/*====================== start header layout======================================*/
+
+.home {
+  .owl-carousel {
+    .item {
+      max-height: 670px;
+      height: 665px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background: rgba($color: #000000, $alpha: 0.6);
+      }
+
+      .content {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        min-width: 60%;
+        max-width: 98%;
+
+        h1 {
+          font-size: 50px;
+          font-weight: 800;
+          // margin-bottom: 16px;
+          color: $white;
+          min-height: 70px;
+        }
+        p {
+          font-size: 32px;
+          font-weight: 400;
+          padding-bottom: 50px;
+          color: $white;
+        }
+
+        .btns {
+          display: flex;
+          justify-content: center;
+          gap: 33px;
+          .download_profile {
+            min-width: 170px;
+            background: $white;
+            color: $defaultColor;
+            border: 1px solid transparent;
+
+            &:hover {
+              color: $white;
+              box-shadow: inset 12em 0 0 0 black;
+              // background: $defaultColor;
+              // border: 1px solid $defaultColor;
+            }
+          }
+
+          .contact_btn {
+            min-width: 138px;
+            &:hover {
+              box-shadow: inset 10em 0 0 0 black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.owl-nav {
+  button {
+    i {
+      color: #fff;
+      font-size: 35px;
+    }
+  }
+}
+
+.typed-cursor.typed-cursor--blink {
+  display:none
+}
+/*====================== end header layout ======================================*/

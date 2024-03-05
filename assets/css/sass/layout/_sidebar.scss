@@ -1,0 +1,83 @@
+/*====================== start sidebar layout ================================================================= */
+
+.side-bar {
+  transition: all 0.5s ease-in-out;
+  background: $white;
+  // background: rgba($color: $mainColor, $alpha: 0.9);
+  position: fixed;
+  height: 100%;
+  z-index: 99999;
+  top: 0;
+  right: -400px;
+  overflow-y: auto !important;
+  width: 250px;
+  box-shadow: 0px 3px 16px #26272759;
+  .side-bar-content {
+    background: $mainColor;
+    padding: 25px 0;
+    text-align: start;
+    padding-right: 8px;
+    ul {
+      li {
+        display: inline-block;
+        a {
+          color: $mainColor !important;
+          padding-left: 17px;
+          &:hover {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+  .side-bar-route {
+    margin: 20px 0;
+    text-align: start;
+    line-height: 63px;
+    li {
+      line-height: 61px;
+      padding: 0px;
+      padding-inline-start: 35px;
+      margin-bottom: 5px;
+      background: transparent;
+      text-indent: 18px;
+      display: block;
+      a {
+        color: $mainColor;
+        font-weight: 800;
+        display: block;
+      }
+      &:hover {
+        background: $defaultColor;
+        color: $white !important;
+        a {
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  .side-top {
+    padding: 10px 50px;
+
+    i {
+      cursor: pointer;
+      color: $mainColor;
+      font-size: 30px;
+    }
+  }
+}
+.side-bar.open {
+  right: 0 !important;
+  left: auto;
+  width: 100%;
+}
+
+.bar.navbar-toggler {
+  display: flex;
+  justify-content: flex-end;
+  color: $defaultColor;
+  display: none;
+}
+
+/*====================== end sidebar layout =================================================================== */

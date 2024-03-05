@@ -1,0 +1,125 @@
+// ============================ start partners ===================
+.partners {
+  background: #f2f2f2;
+  padding: 60px 0 80px;
+  overflow: hidden;
+
+  .head_main {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .item {
+    .image {
+      width: 250px;
+      height: 120px;
+      padding: 35px;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: contain;
+        filter: grayscale(1);
+
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+
+  .owl-nav {
+    top: 30%;
+    button.owl-prev {
+      left: -70px;
+      background: #353131;
+    }
+    button.owl-next {
+      right: -70px;
+      background: #353131;
+    }
+  }
+}
+
+.team {
+  margin: 50px 0;
+  overflow: hidden;
+  .info_row {
+    // overflow: hidden;
+    .head_path {
+      padding: 10px 80px;
+      display: inline-block;
+      color: #fff;
+      background: #000;
+      position: relative;
+      margin-top: 50px;
+      margin-bottom: 30px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -51px;
+        left: -65px;
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        transform: rotate(45deg);
+      }
+      h5 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+
+    .card_image {
+      transition: 0.5s;
+      margin-bottom: 40px;
+      // overflow: hidden;
+
+      &:hover {
+        box-shadow: 0 14px 34px rgba($color: #000000, $alpha: 0.09);
+
+        .image {
+          img {
+            transform: scale(1.2);
+          }
+        }
+
+        .desc {
+          background: $white;
+          p {
+            color: #d22b35;
+          }
+        }
+      }
+
+      .image {
+        width: 100%;
+        height: 277px;
+        overflow: hidden;
+        img {
+          transition: 0.5s;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .desc {
+      background: #f2f2f2;
+      padding: 25px 0px;
+      text-align: center;
+      transition: 0.5s;
+      h6 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+// ============================ end partners =====================

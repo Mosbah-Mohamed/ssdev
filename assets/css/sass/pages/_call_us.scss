@@ -1,0 +1,185 @@
+// =================== start call us =============
+.call_us {
+  overflow: hidden;
+  margin: 100px 0;
+
+  &.call_back {
+    background: #f2f2f2;
+    margin: 0;
+    padding: 100px 0;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 800;
+    }
+
+    .form_contact {
+      background: #fff;
+    }
+  }
+
+  .form_contact {
+    box-shadow: 0 4px 28px 0 rgba(214, 214, 214, 0.25);
+    padding: 66px 44px;
+    .form-group {
+      margin-bottom: 0;
+      input,
+      select,
+      textarea {
+        margin-bottom: 17px;
+        height: 48px;
+        border: 1px solid #c4c2c2;
+        width: 100%;
+        padding: 10px 13px;
+        color: #222222;
+        font-weight: 400;
+
+        &::placeholder {
+          color: #222222;
+          font-weight: 400;
+        }
+
+        &:focus-visible {
+          outline: none;
+        }
+      }
+
+      textarea {
+        height: 100px;
+        resize: none;
+      }
+
+      button {
+        width: 100%;
+        height: 48px;
+        font-weight: 800;
+
+        transition: 1s;
+        &:hover {
+          box-shadow: inset 45em 0 0 0 black;
+        }
+      }
+    }
+  }
+}
+
+.contact-us {
+  overflow: hidden;
+  &.call_us {
+    margin: 0 0 -150px;
+    position: relative;
+    z-index: 9999;
+    padding: 100px 0 0;
+    // background: #f6f6f6;
+
+    .head_main {
+      h4 {
+        font-size: 32px;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .all_forms {
+    width: 100%;
+    display: flex;
+  }
+
+  .footer,
+  .form_contact {
+    width: 50%;
+    max-width: 50%;
+    flex: 50%;
+  }
+
+  .form_contact {
+    background-color: #fff;
+    box-shadow: 0 0px 10px 0 rgba(183, 183, 183, 0.45);
+  }
+
+  .footer {
+    background-position: -99px 265px;
+    background-size: 520px 420px;
+    .footer_info {
+      padding: 0px 80px;
+      position: relative;
+
+      h5 {
+        margin-bottom: 45px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: -171px;
+        left: -60px;
+        width: 150px;
+        height: 181px;
+        transform: rotate(51deg);
+        background: #fff;
+      }
+
+      > ul {
+        li {
+          a {
+            display: flex;
+            gap: 17px;
+            font-size: 25px;
+          }
+        }
+      }
+      .social_media ul li a {
+        width: 43px;
+        height: 43px;
+        @include border-notch(10px, 0, 0, 0);
+        position: relative;
+
+        i {
+          font-size: 20px;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 89px;
+          top: -48px;
+          left: -48px;
+          transform: rotate(48deg);
+          background: #fff;
+        }
+      }
+
+      ul {
+        display: flex;
+        gap: 22px;
+        flex-direction: column;
+        margin-bottom: 40px;
+        li {
+          margin-bottom: 0;
+        }
+      }
+
+      .social_media ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+    }
+    h5 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  }
+}
+.map-section {
+  position: relative;
+  z-index: -1;
+  iframe {
+    height: 670px;
+  }
+}
+// =================== end call us ===============

@@ -1,0 +1,238 @@
+// ========= start about us ==============
+
+.about_us {
+  margin: 100px 0;
+  overflow: hidden;
+
+  button {
+    margin-top: 32px;
+    min-width: 144px;
+  }
+
+  .mask1 {
+    -webkit-mask-image: url(../imgs/images/about_us.svg);
+    mask-image: url(../imgs/images/about_us.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: 80%;
+  }
+  .about-content {
+    p {
+      font-size: 18px;
+      width: 80%;
+    }
+
+    button {
+      &:hover {
+        box-shadow: inset 9em 0 0 0 black;
+      }
+    }
+  }
+}
+
+.statics {
+  padding: 0 0 100px;
+  overflow: hidden;
+
+  .all_content {
+    background-image: url(../imgs/Images/counter-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 50px 70px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -60px;
+      left: -52px;
+      transform: rotate(51deg);
+      background: #fff;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.83) 53.51%,
+        rgba(209, 44, 53, 0.59) 100.95%
+      );
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 99;
+  }
+
+  .counter {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 11px;
+    position: relative;
+    overflow: hidden;
+    @include border-notch(30px, 0, 0, 0);
+    background: rgba($color: #fff, $alpha: 0);
+    transition: 0.5s;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 125px;
+      top: -47px;
+      left: -48px;
+      transform: rotate(45deg);
+      background: #fff;
+    }
+
+    .count-number {
+      font-size: 52px;
+      font-weight: 800;
+      color: #fff;
+      transition: 0.5s;
+    }
+
+    .stats-text {
+      font-size: 17px;
+      font-weight: 400;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      background: #fff;
+      .count-number {
+        color: $defaultColor;
+        transform: scale(1.1);
+      }
+
+      .stats-text {
+        color: $mainColor;
+      }
+    }
+  }
+
+  .grad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    right: 136px;
+  }
+}
+
+.center_advertise {
+  margin: 100px 0;
+
+  .tabs {
+    margin-bottom: 50px;
+  }
+
+  .card_image {
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      .image {
+        overflow: hidden;
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      .desc {
+        background: rgba($color: $defaultColor, $alpha: 1);
+      }
+    }
+
+    .image {
+      .hover-animation {
+        width: 100%;
+        height: 400px;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: 0.5s;
+        }
+      }
+    }
+    .desc {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      background: rgba(210, 43, 53, 0.7);
+      right: 0;
+      padding: 10px;
+      transition: 0.5s;
+      p {
+        padding-bottom: 0;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// ========= end about us ==============
+.pro_about {
+  background: #fff !important;
+}
+.our_vision {
+  padding: 70px 0;
+  background: #f2f2f2;
+  overflow: hidden;
+  .box {
+    padding: 32px 32px 50px;
+    transition: 0.5s;
+    box-shadow: 0 4px 24px 0 rgba(214, 214, 214, 0.25);
+    border-bottom: 2px solid transparent;
+    background: #fff;
+    .image {
+      img {
+        width: 65px;
+        height: 40px;
+        opacity: 0.1;
+        object-fit: contain;
+        transition: 0.5s;
+      }
+    }
+
+    h4 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+    }
+
+    &:hover {
+      .image {
+        img {
+          opacity: 1;
+        }
+      }
+      border-bottom: 5px solid $mainColor;
+    }
+  }
+}
